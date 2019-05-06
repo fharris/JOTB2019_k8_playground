@@ -43,8 +43,9 @@ For this lab you will need Github and Docker Hub Accounts. Use the following lin
 
 - From any browser, go to:
 
-    [https://github.com/derekoneil/twitter-feed](https://github.com/derekoneil/twitter-feed)
-
+    
+    [https://github.com/fharris/twitter-feed](https://github.com/fharris/twitter-feed)
+    
 - Click **Fork** in the upper right hand corner of the browser. **Sign in** if prompted.
 
   ![](images/100/1.png)
