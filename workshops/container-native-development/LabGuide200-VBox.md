@@ -20,12 +20,6 @@ During this lab, you will take on the **DevOps Engineer Persona**. You will prov
   - Configure and Run Wercker Deployment Pipelines
   - Deploy and Test the Product Catalog Application
 
-## Required Artifacts
-
-- XXXX
-  - XXX
-  - XXX
-
 ## Configure and Run Wercker Deployment Pipelines
 
 ### **STEP 6**: Define Kubernetes Deployment Specification
