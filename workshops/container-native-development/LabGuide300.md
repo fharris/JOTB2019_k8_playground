@@ -85,9 +85,10 @@ During this lab, you will take on the **Lead Developer Persona** and work on fix
 
 ### **STEP 3**: Validate Product Catalog application functionality
 
-- Still in the Kubernetes dashboard, click **Services** from the left side navigation menu. Then click the **External endpoint URL** for the **product-catalog-service**.
+If you don't remember the ip and port where you're app catalog service is running get back to **Discovering and Load Balancing --> Services --> product-catalog-service** and take note of it:
 
-  ![](images/300/12.png)
+![](images/200/nodePortPath.png)
+
 
 - The Alpha Office Product Catalog site will load in a new tab. Click on **any of the products** to load its twitter feed. Now the feed displays only tweets with hashtags relevant to this specific product. We've gone from making a code change to having our new version built, tested, and deployed to Kubernetes in just a couple of minutes!
 
