@@ -215,7 +215,7 @@ deploy-to-cluster:
 Open the file **kubeconfig** and copy the values accordingly:
 
 ![](images/200/environment-vars.png)
-![](images/200/37.png)
+
 
 ```
   Key:                      Value:                                                           Protected:
