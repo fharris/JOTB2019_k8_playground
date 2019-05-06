@@ -303,7 +303,11 @@ Create the rest of the environment variables following these 2 examples and the 
 ### **STEP 13**: Deploy and test the Product Catalog using the Kubernetes dashboard
 
 - Switch back to your **Kubernetes dashboard** browser tab. If you have closed it, navigate to the Kubernetes dashboard at [**Kubernetes dashboard**](http://localhost:8001/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/)
+
 Please, when working in the **Kubernetes dashboard**, make sure you're working in your namespace and not in the default namespace, or in one of your buddies nampespace.
+
+  ![](images/200/namespace.png)
+
 
 - In the upper right corner of the dashboard, click **Create**.
 
