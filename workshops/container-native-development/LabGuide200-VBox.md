@@ -212,7 +212,10 @@ deploy-to-cluster:
 
 - As you noticed from the step **deploy-to-cluster** defined above in the yaml, there are a few environment variables related to our kubernetes cluster to be created.
 
-Open the file **kubeconfig** and copy the values accordingly. 
+Open the file **kubeconfig** and copy the values accordingly:
+
+![](images/200/environment-vars.png)
+![](images/200/37.png)
 
 ```
   Key:                      Value:                                                           Protected:
