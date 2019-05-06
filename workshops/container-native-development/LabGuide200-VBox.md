@@ -303,6 +303,7 @@ Create the rest of the environment variables following these 2 examples and the 
 ### **STEP 13**: Deploy and test the Product Catalog using the Kubernetes dashboard
 
 - Switch back to your **Kubernetes dashboard** browser tab. If you have closed it, navigate to the Kubernetes dashboard at [**Kubernetes dashboard**](http://localhost:8001/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/)
+Please, when working in the **Kubernetes dashboard**, make sure you're working in your namespace and not in the default namespace, or in one of your buddies nampespace.
 
 - In the upper right corner of the dashboard, click **Create**.
 
@@ -319,7 +320,7 @@ Create the rest of the environment variables following these 2 examples and the 
   ![](images/200/51.png)
 
 - Instead of a cluster-internal IP address, the product-catalog-service will be exposed to the internet via a **Node Port**. The node where our pod is running will expose a port for this service on its public IP address.  All the information you need to have access to the application can be obtained as well in the  **Kubernetes dashboard** browser tab. 
-Makesure you're in your namespace. Then go to **Discovering and Load Balancing --> Services --> product-catalog-service** .
+Make sure you're in your namespace. Then go to **Discovering and Load Balancing --> Services --> product-catalog-service** .
 
 ![](images/200/nodePortPath.png)
  	
