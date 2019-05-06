@@ -210,14 +210,22 @@ deploy-to-cluster:
 
 ### **STEP 9**: Set up environment variables in Wercker
 
-- Our first step is to set our cluster's authentication token as a Wercker environment variable. In your **terminal window**, change to the correct directory, and run the following command to copy the token to your clipboard. Note - If your kubernetes proxy server is still running, you can enter Control-C to close the proxy:
+- As you noticed from the step **deploy-to-cluster** defined above in the yaml, there are a few environment variables related to our kubernetes cluster to be created.
 
-  ```bash
-  cd ~/terraform-kubernetes-installer/
-  terraform output api_server_admin_token | xclip -sel clip
-  ```
+Open the file **kubeconfig** and copy the values accordingly. 
 
-- Back in your Wercker browser tab, click the **Environment** tab. In the key field of the empty row below the last environment variable, enter the key **KUBERNETES_TOKEN**. In the value field, **paste** the token we just copied. Check the **Protected** box and click **Add**. _NOTE:_ when you paste into the environment field, ensure that you _remove any Line Feed character_ that might be included.
+```
+  Key:                      Value:                                                           Protected:
+  KUBERNETES_NAMESPACE      namespace created in previous exercise e.g: fernando-harris      no
+  KUBERNETES_CONTEXT        used the same as for namespace e.g.: fernando-harris             no
+  KUBERNETES_TOKEN          copy value token from kubeconfig file                            yes  
+  KUBERNETES_MASTER         copy value server from kubeconfig file                           yes
+  KUBERNETES_CLUSTER_ID     copy value cluster from kubeconfig file                          yes
+  KUBERNETES_CLUSTER_USER   copy value user from kubeconfig file                             yes
+```
+:
+
+- So, for example, for the **KUBERNETES_TOKEN**, back in your Wercker browser tab, click the **Environment** tab. In the key field of the empty row below the last environment variable, enter the key **KUBERNETES_TOKEN**. In the value field, **paste** the token we just copied. Check the **Protected** box and click **Add**. _NOTE:_ when you paste into the environment field, ensure that you _remove any Line Feed character_ that might be included.
 
   ![](images/200/37.png)
 
