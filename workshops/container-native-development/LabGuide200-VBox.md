@@ -1,4 +1,4 @@
-# CHANGE NAME --  Provision Kubernetes Using Terraform
+# Automate Deployment to Kubernetes
 
 ![](images/200/header.png)
 
@@ -135,6 +135,45 @@ deploy-to-cluster:
         token: $KUBERNETES_TOKEN
         insecure-skip-tls-verify: true
         command: apply -f kubernetes.yml
+ 
+ #Deploy our container from the Docker Hub to Kubernetes
+deploy-to-cluster:
+    box:
+        id: alpine
+        cmd: /bin/sh
+    steps:
+
+    - bash-template
+
+    - script:
+        name: "Visualise Kubernetes config"
+        code: cat kubernetes.yml
+    
+    
+    - kubectl:
+        name: set context
+        server: $KUBERNETES_MASTER
+        #username: $KUBERNETES_USERNAME
+        token: $KUBERNETES_TOKEN
+        insecure-skip-tls-verify: true
+        command: config set-context $KUBERNETES_CONTEXT --namespace=$KUBERNETES_NAMESPACE --cluster=cluster-csdonbzmu2d --user=user-csdonbzmu2d
+
+    - kubectl:
+        name: use context
+        server: $KUBERNETES_MASTER
+        #username: $KUBERNETES_USERNAME
+        token: $KUBERNETES_TOKEN
+        insecure-skip-tls-verify: true
+        command: config use-context fernando-harris
+
+    - kubectl:
+        name: deploy to kubernetes
+        server: $KUBERNETES_MASTER
+        #username: $KUBERNETES_USERNAME
+        token: $KUBERNETES_TOKEN
+        insecure-skip-tls-verify: true
+        command: apply -f kubernetes.yml
+
 ```
 
 - At the bottom of the page, click **Commit changes**.
