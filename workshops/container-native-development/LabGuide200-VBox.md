@@ -136,7 +136,7 @@ deploy-to-cluster:
         insecure-skip-tls-verify: true
         command: apply -f kubernetes.yml
  
- #Deploy our container from the Docker Hub to Kubernetes
+#Deploy our container from the Docker Hub to Kubernetes
 deploy-to-cluster:
     box:
         id: alpine
@@ -156,7 +156,7 @@ deploy-to-cluster:
         #username: $KUBERNETES_USERNAME
         token: $KUBERNETES_TOKEN
         insecure-skip-tls-verify: true
-        command: config set-context $KUBERNETES_CONTEXT --namespace=$KUBERNETES_NAMESPACE --cluster=cluster-csdonbzmu2d --user=user-csdonbzmu2d
+        command: config set-context $KUBERNETES_CONTEXT --namespace=$KUBERNETES_NAMESPACE --cluster=$KUBERNETES_CLUSTER_ID --user=$KUBERNETES_CLUSTER_USER
 
     - kubectl:
         name: use context
@@ -164,7 +164,7 @@ deploy-to-cluster:
         #username: $KUBERNETES_USERNAME
         token: $KUBERNETES_TOKEN
         insecure-skip-tls-verify: true
-        command: config use-context fernando-harris
+        command: config use-context $KUBERNETES_CONTEXT
 
     - kubectl:
         name: deploy to kubernetes
