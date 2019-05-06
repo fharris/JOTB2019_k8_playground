@@ -229,15 +229,11 @@ Open the file **kubeconfig** and copy the values accordingly.
 
   ![](images/200/37.png)
 
-- The other environment variable we need to add is the address of the Kubernetes master we want to deploy to. We can get the URL from `kubectl`. Run the following command in your **terminal window** to copy the URL to your clipboard:
 
-  ```bash
-  echo $(kubectl config view | grep server | cut -f 2- -d ":" | tr -d " ") | xclip -sel clip
-  ```
-
-- In your Wercker browser tab, add a new environment variable with the key **KUBERNETES_MASTER**. In the value field, **paste** the value you copied from `kubectl`. The value **must start with https://** for Wercker to communicate with the cluster. When finished, click **Add**.
-
+- Now, for the new environment variable with the key **KUBERNETES_MASTER**  you should find in the **kubeconfig** file something as this:
   ![](images/200/55.png)
+
+Create the rest of the environment variables following these 2 examples and the table above!
 
 - Now we're ready to try out our workflow from start to finish. We could do that by making another commit on GitHub, since Wercker is monitoring our source code. We can also trigger a workflow execution right from Wercker. We'll see how in the next step.
 
