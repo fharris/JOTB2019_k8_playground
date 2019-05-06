@@ -94,4 +94,4 @@ If you don't remember the ip and port where you're app catalog service is runnin
 
   ![](images/300/13.png)
 
-  **You are now ready to move to the next lab, [Lab 400](LabGuide400.md)**
+  **Congratulations you finished your Kubernetes Playground JOTB 2019**
