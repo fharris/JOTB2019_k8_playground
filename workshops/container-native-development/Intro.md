@@ -8,7 +8,7 @@ This is supposed to be a begginers workshop! So, if you already have a good gras
 
 [Optional: Read theory](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/).
 
-It typically takes around 5 minutes to create a managed OKE cluster in OCI, whether with the OCI Console, the OCI API, with Terraform or JenkinsX.
+It typically takes around 5 minutes to create a managed OKE (Oracle Kubernetes Cluster) in OCI (Oracle Cloud Infrastructure), whether with the OCI Console, the OCI API, with Terraform or JenkinsX.
 Today, you won't need to create a cluster as you're going to work in a cluster which was already created for you. All you'll have to do is to download the kubconfig file [here](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/kubeconfig).
 
 This file gives you a lot of power! You'll be able to execute any type of action or operation against the cluster! You'll need that power along this workshop! 
