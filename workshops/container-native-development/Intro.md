@@ -21,9 +21,9 @@ This file gives you a lot of power! You'll be able to execute any type of action
 	     
 	
 ####  You should have something like : 
-        ```	
-	 yourusername/container-workshop
-        ```
+       	
+	$ yourusername/container-workshop
+       
 
 Please, don't forget to copy the **kubeconfig** file you just downloaded into the **container-workshop** folder.
 
