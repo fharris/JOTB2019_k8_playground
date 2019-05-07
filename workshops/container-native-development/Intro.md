@@ -15,12 +15,15 @@ This file gives you a lot of power! You'll be able to execute any type of action
 
 ### Now, in your computer, create a folder called container-workshop in your user area:
      
+  Linux Example:
+  
       $ mkdir -p $HOME/container-workshop
     
   ####    or
      
       $mkdir container-workshop
-	     
+
+If you're running windows, follow the windows approach to create the folder please :)
 	
 ####  You should end up with something like this : 
        	
