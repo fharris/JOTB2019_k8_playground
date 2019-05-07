@@ -21,13 +21,13 @@ This file gives you a lot of power! You'll be able to execute any type of action
 	     
 	
 ####  You should have something like : 
-        ```bash	
+        ```	
 	 yourusername/container-workshop
         ```
 
-Now don't forget to copy the kubeconfig file you just downloaded into the container-workshop folder.
+Please, don't forget to copy the **kubeconfig** file you just downloaded into the **container-workshop** folder.
 
-This folder will be your working folder where you'll generally execute your commands and copy and download the different files you will need.
+This folder will be your local working folder where you'll generally execute your commands and copy and download the different files you will need.
 
 ### **STEP 2**: Install and Test kubectl on Your Local Machine
 
