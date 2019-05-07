@@ -84,7 +84,10 @@ This folder will be your local working folder where you'll generally execute you
 
     ![](images/LabGuide200-778c8b15.png)
 
-    **NOTE**: You should see in the `cluster-info` that the Kubernetes master has an `oraclecloud.com` URL. If it instead has a `localhost` URL, your `KUBECONFIG` environment variable may not be set correctly. Double check the environment variable against the path and filename of your `kubeconfig` file.
+    You should see in the `cluster-info` that the Kubernetes master has an `oraclecloud.com` URL. If it instead has a `localhost` URL, your `KUBECONFIG` environment variable may not be set correctly. 
+    
+    **ATTENTION**:
+    **Double check the environment variable against the path and filename of your `kubeconfig` file.**
 
 If everything is ok, we can now use `kubectl` to start a proxy that will give us access to the Kubernetes Dashboard through a web browser at a localhost URL. Run the following command in the same terminal window:
 
