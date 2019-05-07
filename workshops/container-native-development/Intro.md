@@ -109,6 +109,8 @@ If everything is ok, we can now use `kubectl` to start a proxy that will give us
 
 ### **Step 3**: Create your personal namespace
 
+[Optional: Read theory](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/).
+
  **First, let's Check the existing namespaces in the cluster**
  
  You will see that the typical k8s default namespaces are created.
@@ -146,6 +148,8 @@ And your namespace should be part of this list of recently created namespaces in
 
 ### **Step 4**: Prepare to work in the correct context
 
+[Optional: Read theory](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#context).
+
 We are going to work each one with our own set of resources inside our namespace. To make sure we don't mess around with our coleagues namespaces, nor with the default namespace, we are going to create a specific context associated with your namespace. This will help us assuring that every kubectl execution we run on our laptop, will be against our personal namespace!
 	
 Copy the following line and past it into a text editor:
@@ -180,10 +184,14 @@ Please download the manifest yaml for the deployment definition from [here](http
 You should get a message saying that a deployment was created.
 
 **Check deployment**
+
+[Optional: Read theory](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
 	
 	$ kubectl get deployments
 
 **Checking the pods created**
+
+[Optional: Read theory](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/).
 
 	$ kubectl get pods
 	
@@ -197,8 +205,9 @@ You should get a message saying that a deployment was created.
    
    
    
-
 **Let's create the service in the cluster**
+
+[Optional: Read theory](https://kubernetes.io/docs/concepts/services-networking/service/).
 
 Please download the manifest yaml for the service definition from [here](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/manifestService.yml).
 
