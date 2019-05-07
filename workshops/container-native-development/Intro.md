@@ -126,7 +126,7 @@ If everything is ok, we can now use `kubectl` to start a proxy that will give us
    
   **Now lets create our own namespace where we are going to work**
    
-   The objective is to create a namespace with your own name where you're then supposed to work along the entire workshop (including the second part). So, in a text editor create a local file called namespace.json or just download [this](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/namespace-dev.json) template and change it accordingly
+   The objective is to create a namespace with your own name where you're then supposed to work along the entire workshop (including the second part). So, in a text editor create a local file called namespace-dev.json or just download [this](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/namespace-dev.json) template and change it accordingly
    
    
    
