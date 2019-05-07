@@ -1,16 +1,9 @@
-# Make a Bug Fix to Your Java Microservice
+# Lab 300 - Make a Bug Fix to Your Java Microservice
 
-![](images/300/header.png)
 
 ## Introduction
 
-This is the third of several labs that are part of the **Oracle Public Cloud Container Native Development workshop.** This workshop will walk you through the process of moving an existing application into a containerized CI/CD pipeline and deploying it to a Kubernetes cluster in the Oracle Public Cloud.
-
-You will take on 2 personas during the workshop. The **Lead Developer Persona** will be responsible for configuring the parts of the automated build and deploy process that involve details about the application itself. The **DevOps Engineer Persona** will configure the parts of the automation involving the Kubernetes infrastructure. To containerize and automate the building and deploying of this application you will make use of Wercker Pipelines for CI/CD, Docker Hub for a container registry, and Terraform for provisioning a Kubernetes cluster on Oracle Cloud Infrastructure.
-
-During this lab, you will take on the **Lead Developer Persona** and work on fixing a bug found in Java microservice that you deployed to Kubernetes in the previous lab. You will make a code change that fixes the bug, commit the code to GitHub, and observe the execution of the build and deploy workflow that is managing your application. Then you'll test the application to verify that the bug fix was successful.
-
-**_To log issues_**, click here to go to the [GitHub oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
+TBD
 
 ## Objectives
 
@@ -94,4 +87,4 @@ If you don't remember the ip and port where you're app catalog service is runnin
 
   ![](images/300/13.png)
 
-  **Congratulations you finished your Kubernetes Playground JOTB 2019**
+  **Congratulations you finished your DRY RUN Kubernetes Playground JOTB 2019**
