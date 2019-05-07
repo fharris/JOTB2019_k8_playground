@@ -105,15 +105,17 @@ If everything is ok, we can now use `kubectl` to start a proxy that will give us
 
 - Great! We've got Kubernetes installed and accessible -- now we're ready to get our services deployed to the cluster. In your **terminal window**, press **Control-C** to terminate `kubectl proxy`. We will need the terminal window to gather some cluster info in another step. We'll start the proxy again later. Great job!
 
-### **Step 3**: Create your namespace
+### **Step 3**: Create your personal namespace
 
-  **Check the existing namespaces in the cluster**
+ **First, let's Check the existing namespaces in the cluster**
+ 
+ You will see that the typical k8s default namespaces are created.
     
     $ kubectl get namespaces --show-labels
    
-   **Now lets create our own namespace where we are going to work**
+  **Now lets create our own namespace where we are going to work**
    
-   In a text editor create a local file called namespace.json or just download [this](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/namespace-dev.json) template and change it accordingly
+   The objective is to create a namespace with your own name where you're then supposed to work along the entire workshop (including the second part). So, in a text editor create a local file called namespace.json or just download [this](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/namespace-dev.json) template and change it accordingly
    
    
    
@@ -128,28 +130,27 @@ If everything is ok, we can now use `kubectl` to start a proxy that will give us
 	  }
 	}
     
-where you see my name-surname, please replace with yours and thats shall become your namespace. If it colides with one of your coleagues namespace, please use one of your other surnames, or nicknames.... I'm sure you have many cool nicknames :p !
+where you see name-surname (e.g.: fernando-harris), please replace with your own (e.g. john-doe) and thats shall become your namespace. If it colides with one of your coleagues namespace, please use one of your other surnames, or nicknames.... I'm sure you have many cool nicknames :p !
    
   **Run the following command to create the namespace **
    
    	$ kubectl create -f namespace-dev.json
 	
-  **If you check the existing namespacesd again, you should see more stuff created **
+  **If you check the existing namespaces again, you should see thar more resources of type namespace have been created **
    
    	$ kubectl get namespaces --show-labels
 
-And your namespace should be part of this list of recently created namespaces in the cluster
+And your namespace should be part of this list of recently created namespaces in the cluster! If its does, move to the next step!
 
 ### **Step 4**: Prepare to work in the correct context
 
-We are going to work each one with our own set of resources inside our namespace.
-To make sure we don't mess around wit our coleagues namespaces, nor with the default namespace, we are going to create a specific context associated with your namespace. This will help us assuring that every kubectl execution we run on our laptop, will be against our personal namespace!
+We are going to work each one with our own set of resources inside our namespace. To make sure we don't mess around with our coleagues namespaces, nor with the default namespace, we are going to create a specific context associated with your namespace. This will help us assuring that every kubectl execution we run on our laptop, will be against our personal namespace!
 	
 Copy the following line and past it into a text editor:
 
 	$ kubectl config set-context nameofyourcontext --namespace=urnamespace --cluster=cluster-csdonbzmu2d --user=user-csdonbzmu2d
 
-Replace ****nameofyourcontext**** with the same value you've used for your namespace in the above point!
+Replace ****nameofyourcontext**** with the same value you've used for your namespace in the above point (e.g.: john-doe)!
 	
 Well ****urnamespace**** is supposed to be replaced with your namespace !!! Yes you guessed it right! 
 
@@ -168,7 +169,7 @@ If you get a message ****Swtiched to contex "nameofyourcontext".**** then it sho
 
 ### **Step 5**: Deploy your first image to OKE
 
-**Let's create the deployment in the cluster**
+** Finally! We're ready to deploy things! Let's create the deployment in the cluster**
 
 Please download the manifest yaml for the deployment definition from [here](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/manifestDeployment.yml).
 
