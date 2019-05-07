@@ -4,7 +4,7 @@ note: forked and adapted from Derek Oneil - Oracle Learning original workshop
 
 ## Introduction
 
- **JOTB 2019.** This workshop will walk you through the process of moving an existing application into a containerized CI/CD pipeline and deploying it to a Kubernetes cluster in the Oracle Public Cloud.
+ **JOTB 2019.** This workshop will walk you through the process of moving an existing application into a containerized CI/CD pipeline and deploying it to a Kubernetes cluster in OCI.
 
 
 ## Objectives
