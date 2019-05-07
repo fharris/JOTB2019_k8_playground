@@ -1,15 +1,6 @@
-# Kubernetes Playground J On the Beach 2019
-This workshop is aimed to help your team to build and deploy microservices through a CI/CD pipeline against a K8's cluster!
+# Kubernetes Basic Concepts 
 
-The session is intended to take kubernetes beginners or without experience at all into the Brave New World of Continuous Integration and Continuous Delivery in a DevOps environment!
-
-You will work in different teams in a collaborative way in order to build and deploy against a kubernetes cluster a set of services which will structure a cloud native web app.
-
-You will learn how to build, manage and deploy a cloud native application; kubernetes basic concepts in a practical way; how to manage the source control, continuous integration and continuous deployment of your cloud native app in a DevOps manner and finally you will setup your own CI/CD Pipeline.
-
-### In the 1st part of the workshop we will explore k8's pilars and basic concepts.
-### The 2nd part we will jump into the CI/CD configuration!
-
+- In this 1st part we will explore a few k8's basic concepts while on the same time preparing the environmnent we are going to work with.
 
 
 ### **Step 1**: Copy kubeconfig file 
