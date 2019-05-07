@@ -94,7 +94,7 @@ If everything is ok, we can now use `kubectl` to start a proxy that will give us
     ```
 
   **Mac/Linux**
-    ```bash
+    ```
     ./kubectl proxy
     ```
 
