@@ -162,13 +162,14 @@ And your namespace should be part of this list of recently created namespaces in
 
 We are going to work each one with our own set of resources inside our namespace. To make sure we don't mess around with our coleagues namespaces, nor with the default namespace, we are going to create a specific context associated with your namespace. This will help us assuring that every kubectl execution we run on our laptop, will be against our personal namespace!
 	
-Copy the following line and past it into a text editor:
-
-	$ kubectl config set-context nameofyourcontext --namespace=urnamespace --cluster=cluster-csdonbzmu2d --user=user-csdonbzmu2d
+Copy the following line and past it into a text editor. Dont forget to replace proper values before executing the command:
 
 Replace ****nameofyourcontext**** with the same value you've used for your namespace in the above point (e.g.: john-doe)!
 	
 Well ****urnamespace**** is supposed to be replaced with your namespace !!! Yes you guessed it right! 
+
+	$ kubectl config set-context nameofyourcontext --namespace=urnamespace --cluster=cluster-csdonbzmu2d --user=user-csdonbzmu2d
+
 
 If you get a message ****Context "nameofyourcontext" created.**** then it should be ok!
 	
