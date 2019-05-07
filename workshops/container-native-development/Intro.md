@@ -1,6 +1,8 @@
 # Lab 000 - Kubernetes Basic Concepts 
 
-- In this 1st part we will explore a few k8's basic concepts while on the same time preparing the environmnent we are going to work with.
+In this 1st part we will explore a few k8's basic concepts while on the same time preparing the environmnent we are going to work with.
+
+**TIP : If you are using Windows, having Git Bash for Windowns installed can be very helpfull as you will be able to run Linux comands whenever you need!**
 
 This is supposed to be a begginers workshop! So, if you already have a good grasp of kubernetes, you'll probably finish this very quickly! In the case you're a newbie, you'll find some help and comfort in the [kubernetes.io](https://kubernetes.io/docs/tutorials/kubernetes-basics/) page. Along the workshop we'll point you out the links to the concepts if you want to learn how things work in theory! But for now, let's go hands-on! 
 
@@ -87,7 +89,7 @@ This folder will be your local working folder where you'll generally execute you
 If everything is ok, we can now use `kubectl` to start a proxy that will give us access to the Kubernetes Dashboard through a web browser at a localhost URL. Run the following command in the same terminal window:
 
   **Windows**
-    ```bash
+    ```
     kubectl.exe proxy
     ```
 
