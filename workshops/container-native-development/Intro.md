@@ -2,14 +2,16 @@
 
 - In this 1st part we will explore a few k8's basic concepts while on the same time preparing the environmnent we are going to work with.
 
+This is supposed to be a begginers workshop! So, if you already have a good grasp of kubernetes, you'll probably finish this very quickly! In the case you're a newbie, you'll find some help and comfort in the [kubernetes.io](https://kubernetes.io/docs/tutorials/kubernetes-basics/) page. Along the workshop we'll point you out the links to the concepts if you want to learn how things work in theory! But for now, let's go hands-on! 
 
 ### **Step 1**: Copy kubeconfig file 
 
-It typically takes  around 5 minutes to create a managed OKE cluster in OCI, whether with the OCI Console, the OCI API, with Terraform or JenkinsX.
+[Optional: Read theory](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/).
 
+It typically takes around 5 minutes to create a managed OKE cluster in OCI, whether with the OCI Console, the OCI API, with Terraform or JenkinsX.
 Today, you won't need to create a cluster as you're going to work in a cluster which was already created for you. All you'll have to do is to download the kubconfig file [here](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/kubeconfig).
 
-This file gives you a lot of power! You'll be able to execute any type of action or operation against the cluster! You'll need that power along this workshop!
+This file gives you a lot of power! You'll be able to execute any type of action or operation against the cluster! You'll need that power along this workshop! 
 
 ### Now create a folder called container-workshop in your user area:
      
@@ -20,7 +22,7 @@ This file gives you a lot of power! You'll be able to execute any type of action
       $mkdir container-workshop
 	     
 	
-####  You should have something like : 
+####  You should end up with something like this : 
        	
 	$ yourusername/container-workshop
        
