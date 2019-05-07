@@ -17,7 +17,9 @@ For the second part you will need the following services! We will let you know w
 - Github account
 - Wercker account (which you can create with your github account)
 - Docker Hub Account
+- Access to a kubernetes cluster
 
 - TBD
+- info about OKE
 
   - [Intro.md](Intro.md): Start!
