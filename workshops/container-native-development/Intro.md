@@ -1,4 +1,4 @@
-# Kubernetes Basic Concepts 
+# Lab 000 - Kubernetes Basic Concepts 
 
 - In this 1st part we will explore a few k8's basic concepts while on the same time preparing the environmnent we are going to work with.
 
