@@ -1,6 +1,5 @@
 # Lab 200 - Automate Deployment to Kubernetes
 
-![](images/200/header.png)
 
 ## Introduction
 
