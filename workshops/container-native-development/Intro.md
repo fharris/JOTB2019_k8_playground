@@ -14,8 +14,10 @@ Today, you won't need to create a cluster as you're going to work in a cluster w
 This file gives you a lot of power! You'll be able to execute any type of action or operation against the cluster! You'll need that power along this workshop! 
 
 ### Now, in your computer, create a folder called container-workshop in your user area:
-     
-  Linux Example:
+
+If you're running windows, follow the windows approach to create the folder please :)
+
+Take this Linux Example if you're using Linux:
   
       $ mkdir -p $HOME/container-workshop
     
@@ -23,7 +25,7 @@ This file gives you a lot of power! You'll be able to execute any type of action
      
       $mkdir container-workshop
 
-If you're running windows, follow the windows approach to create the folder please :)
+
 	
 ####  You should end up with something like this : 
        	
