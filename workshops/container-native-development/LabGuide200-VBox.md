@@ -263,7 +263,7 @@ Please, keep this in mind for this training that when working in the **Kubernete
 
   `curl -s http://$HOSTNAME:8080/statictweets | head -c 100`
 
-- You should the first 100 characters of the JSON data being returned by our twitter feed service. Our microservice has been deployed successfully! But the twitter feed service is just one part of our product catalog application. Let's deploy the rest of the application so we can validate that everything works together as expected. Leave this browser tab open, as we will use it in a later step.
+- You should be able to see the first 100 characters of the JSON data being returned by our twitter feed service. Our microservice has been deployed successfully! But the twitter feed service is just one part of our product catalog application. Let's deploy the rest of the application so we can validate that everything works together as expected. Leave this browser tab open, as we will use it in a later step.
 
   ![](images/200/46.png)
 
