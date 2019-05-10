@@ -244,6 +244,11 @@ where **9006** is the port where you want to run the kubernetes dasboard in this
 
 - First thing to do is to select your  "Namespace" in the right side section.
 
+Please, keep this in mind for this training that when working in the **Kubernetes dashboard**, make sure you're working in your namespace and not in the default namespace, or in one of your buddies nampespace:
+
+  ![](images/200/namespace.png)
+
+
 - Click on the **Overview** menu option in the Kubernetes dashboard **left-hand menu**. In the pods section, you should see two twitter-feed pods running. Click the **name of one of the pods** to go to the detail page.
 
   ![](images/200/44.png)
