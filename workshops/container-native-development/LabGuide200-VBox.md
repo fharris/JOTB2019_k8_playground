@@ -253,7 +253,19 @@ Create the rest of the environment variables following these 2 examples and the 
   kubectl proxy
   ```
 
-- In a browser tab, navigate to the [**Kubernetes dashboard**](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login)
+- In a browser tab, navigate to the [**Kubernetes dashboard**](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login) and don't forget that if you're already using port 8001 you should run:
+
+
+  ```bash
+  kubectl proxy -p 9006
+  ```
+
+where **9006** is the port where you want to run the kubernetes dasboard in this example. In this case, please use the link in the following way to get access to the **Kubernetes Dashboard**:
+
+http://localhost:**9006**/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
+
+
+
 
 - Click on the **Overview** menu option in the Kubernetes dashboard **left-hand menu**. In the pods section, you should see two twitter-feed pods running. Click the **name of one of the pods** to go to the detail page.
 
