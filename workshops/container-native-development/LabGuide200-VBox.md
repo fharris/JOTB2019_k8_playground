@@ -102,26 +102,6 @@ spec:
   >The **deploy-to-cluster** Pipeline will prepare our kubernetes.yml file by filling in some environment variables. It will then use kubectl to tell Kubernetes to apply that configuration to our cluster.
 
 ```yaml
-#Deploy our container from the Docker Hub to Kubernetes
-deploy-to-cluster:
-    box:
-        id: alpine
-        cmd: /bin/sh
-    steps:
-
-    - bash-template
-
-    - script:
-        name: "Visualise Kubernetes config"
-        code: cat kubernetes.yml
-
-    - kubectl:
-        name: deploy to kubernetes
-        server: $KUBERNETES_MASTER
-        #username: $KUBERNETES_USERNAME
-        token: $KUBERNETES_TOKEN
-        insecure-skip-tls-verify: true
-        command: apply -f kubernetes.yml
  
 #Deploy our container from the Docker Hub to Kubernetes
 deploy-to-cluster:
@@ -260,11 +240,7 @@ Create the rest of the environment variables following these 2 examples and the 
   kubectl proxy -p 9006
   ```
 
-where **9006** is the port where you want to run the kubernetes dasboard in this example. In this case, please use the link in the following way to get access to the **Kubernetes Dashboard**:
-
-http://localhost:**9006**/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
-
-
+where **9006** is the port where you want to run the kubernetes dasboard in this example. In this case, please replace in the link the value **8001** by **9006** in order to get access to the **Kubernetes Dashboard**:
 
 
 - Click on the **Overview** menu option in the Kubernetes dashboard **left-hand menu**. In the pods section, you should see two twitter-feed pods running. Click the **name of one of the pods** to go to the detail page.
