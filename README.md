@@ -1,4 +1,4 @@
-# JOTB 2019 - A fork of # ORACLE Learning Library #
+# JOTB 2019
 ## What is this about ??
 
 This workshop is aimed to help your team to build and deploy microservices through a CI/CD pipeline against a K8's cluster!
@@ -8,6 +8,12 @@ The session is intended to take **kubernetes beginners** or **without experience
 You will work individually to build and deploy against a kubernetes cluster a set of services which will structure a cloud native web app.
 
 You will learn how to build, manage and deploy a cloud native application; kubernetes basic concepts in a practical way; how to manage the source control, continuous integration and continuous deployment of your cloud native app in a DevOps manner and finally you will setup your own CI/CD Pipeline.
+
+This workshop is divided in 2 different parts.
+
+A first part where all you need is a a command-line, and where you will learn or review some basic kubernetes concepts.
+
+A second part where you will build your own CI/CD pipeline and automate the concepts previously learned. This second part is a fork of an originial # ORACLE Learning Library # workshop with some differences. 
 
 ## What will you need ?
 
@@ -23,9 +29,7 @@ For the second part you will need the following services! We will let you know w
 - info about OKE
 
   - [Intro.md](Intro.md): Start!
-
    
-
 
 ![](common/images/customer.logo.png)
 ---
