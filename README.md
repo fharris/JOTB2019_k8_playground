@@ -1,33 +1,32 @@
-# JOTB 2019
+# JOTB 2019 - K'8s Playground
+
 ## What is this about ??
 
-This workshop is aimed to help your team to build and deploy microservices through a CI/CD pipeline against a K8's cluster!
+This workshop is aimed to help you to build and deploy microservices through a CI/CD pipeline against a K8's cluster!
 
 The session is intended to take **kubernetes beginners** or **without experience at all** into the Brave New World of Continuous Integration and Continuous Delivery in a DevOps environment!
 
 You will work individually to build and deploy against a kubernetes cluster a set of services which will structure a cloud native web app.
 
-You will learn how to build, manage and deploy a cloud native application; kubernetes basic concepts in a practical way; how to manage the source control, continuous integration and continuous deployment of your cloud native app in a DevOps manner and finally you will setup your own CI/CD Pipeline.
+You will learn or review many many things, sich as how to build, manage and deploy a cloud native application; kubernetes basic concepts in a practical way; how to manage the source control, continuous integration and continuous deployment of your cloud native app in a DevOps manner etc , etc ...
 
-This workshop is divided in 2 different parts.
+This workshop is divided in **2 different parts**.
 
-A first part where all you need is a a command-line, and where you will learn or review some basic kubernetes concepts.
+A **first part** where all you need is a a **command-line**, and where you will learn or review some **basic kubernetes concepts**.
 
-A second part where you will build your own CI/CD pipeline and automate the concepts previously learned. This second part is a fork of an originial # ORACLE Learning Library # workshop with some differences. 
+A **second part** where you will build your own **CI/CD pipeline** and **automate** the concepts previously learned. This second part is a fork of an originial **ORACLE Learning Library workshop** with some differences. 
 
-## What will you need ?
+## All you need is ?
 
-For the first part of the workshop you just need a command line!
-For the second part you will need the following services! We will let you know when the time to create it has come!
-
-- Github account
-- Wercker account (which you can create with your github account)
-- Docker Hub Account
+- A command-line (windows, mac or linux)
 - Access to a kubernetes cluster
 
-- TBD
-- info about OKE
 
+## "Well, I suppose I will need access to a kubernetes cluster ?! Right ??" Yes you do!
+
+And you will have access to a Oracle Container Services instances or OKE for Oracle Kubernetes Engine as is also knwon. OKE is a developer friendly, container-native, and enterprise-ready managed Kubernetes service for running highly available clusters with the control, security, and predictable performance of Oracle’s Cloud Infrastructure. It automatically gets the latest Kubernetes updates and keeping 100% compatibility with the CNCF ecosystem without the management and administrative overhead.
+
+Let's play:
   - [Click me to Start!](workshops/container-native-development/Intro.md)
    
 ## [Contributing](CONTRIBUTING.md)
