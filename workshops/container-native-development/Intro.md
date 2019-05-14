@@ -19,7 +19,7 @@ This file gives you a lot of power! You'll be able to execute any type of action
 
 If you're running windows, follow the windows approach to create the folder please :)
 
-Take this Linux Example if you're using Linux:
+Take this Linux example if you're using Linux:
   
       $ mkdir -p $HOME/container-workshop
     
@@ -214,7 +214,7 @@ You should get a message saying that a deployment was created.
   ![](images/000/getIP.png) 
   ![](images/200/jotb19_describedeploy.png)
    
-   
+  What you want is the External IP! Once again, take note of it... you will need it in the next point.
    
 **Let's create the service in the cluster**
 
@@ -237,7 +237,7 @@ Take note of the port where your service was configured
 
 **Test your deployement**
 
-Open your browser and navigate to the IP you took note and the port you've also took note:
+Finally, open your browser and navigate to the IP:port you've obtained in the previous 2 points. 
 
 
 
