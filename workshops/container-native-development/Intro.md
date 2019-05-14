@@ -85,8 +85,10 @@ The folder **container-workshop** will be your local working folder where you'll
 
     ![](images/LabGuide200-778c8b15.png)
 
-    You should see in the `cluster-info` that the Kubernetes master has an `oraclecloud.com` URL. If it instead has a `localhost` URL, your `KUBECONFIG` environment variable may not be set correctly. 
+    You should see in the `cluster-info` that the Kubernetes master has an `oraclecloud.com` URL. If it instead has a `localhost` URL, your `KUBECONFIG` environment variable may not be set correctly:
     
+    ![](images/000/cluster-info2.PNG)
+        
     **ATTENTION**:
     **Double check the environment variable against the path and filename of your `kubeconfig` file.** What we mean is that you have to make sure that when you run the above **export** or **set** command to create the environment variable pointing to the kubeconfig, the path was well assigned to the variable. Failing to do this will not let you run the kubectl properly.
 
