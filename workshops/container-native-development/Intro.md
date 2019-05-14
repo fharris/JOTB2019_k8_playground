@@ -209,20 +209,20 @@ You should get a message saying that a deployment was created.
 
 	$ kubectl get pods -o wide
 
-After running this command you'll notice that your pod was created successfully.Even more important you will notice the node where it was deployed. The name of the node should be its internal IP, starting with a 10.0.X.2 , where X can be 13,14 or 15.
+After running this command you'll notice that your pod was created successfully.Even more important you will notice the node where it was deployed. The name of the node should be its **internal IP**, starting with a 10.0.X.2 , where X can be 13,14 or 15.
 
 ![](images/kubectl_getpods1.PNG) 
 
-Now that you know the internal IP of the node where the pod was deployed, you need to know its public external IP. To get that information you need to run the following command:
+Now that you know the internal IP of the node where the pod was deployed, you need to know its **public external IP**. To get that information you need to run the following command:
 
 	$ kubectl get nodes -o wide
 	
-In the screenshot below you can see that each one of the 3 nodes, have its internal IP (eg:10.0.X.2) and a correspondent External IP (eg: 130.61.X.X). Take note of your External IP, i.e., the one associated with the internal IP where the pod was deployed:
+In the screenshot below you can see that each one of the 3 nodes, have its internal IP (eg:10.0.X.2) and a correspondent External IP (eg: 130.61.X.X). **Take note of your External IP**, i.e., the one associated with the internal IP where the pod was deployed:
 
 ![](images/kubectl_getnodes1.PNG) 
  
    
- Remebember, what you want is the External IP! And in our cluster this public external IP will always start with 130.X.X.X! Once again, take note of it... you will need it in the next point.
+ **Remebember, what you want is the External IP!** And in our cluster this public external IP **will always start with 130.61.X.X**! Once again, take note of it... you will need it in the next point.
    
 **Let's create the service in the cluster**
 
