@@ -289,7 +289,7 @@ Please, keep this in mind for this training that when working in the **Kubernete
 
 ### **STEP 13**: Deploy and test the Product Catalog using the Kubernetes dashboard
 
-- Switch back to your **Kubernetes dashboard** browser tab. If you have closed it, navigate to the Kubernetes dashboard at [**Kubernetes dashboard**](http://localhost:8001/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/)
+- Switch back to your  [**Kubernetes dashboard**](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login)
 
 Please, when working in the **Kubernetes dashboard**, make sure you're working in your namespace and not in the default namespace, or in one of your buddies nampespace.
 
