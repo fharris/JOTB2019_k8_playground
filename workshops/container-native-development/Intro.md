@@ -168,7 +168,7 @@ Replace ****nameofyourcontext**** with the same value you've used for your names
 	
 Well ****urnamespace**** is supposed to be replaced with your namespace !!! Yes you guessed it right! 
 
-	$ kubectl config set-context nameofyourcontext --namespace=urnamespace --cluster=cluster-csdonbzmu2d --user=user-csdonbzmu2d
+	$ kubectl config set-context nameofyourcontext --namespace=urnamespace --cluster=cluster-czdqmtggbsw --user=user-czdqmtggbsw
 
 
 If you get a message ****Context "nameofyourcontext" created.**** then it should be ok!
