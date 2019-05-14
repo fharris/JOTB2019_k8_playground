@@ -153,7 +153,7 @@ where you see name-surname (e.g.: fernando-harris), please replace with your own
    
    	$ kubectl create -f namespace-dev.json
 	
-  **If you check the existing namespaces again, you should see thar more resources of type namespace have been created **
+  **If you check the existing namespaces again, you should see that more resources of type namespace have been created **
    
    	$ kubectl get namespaces --show-labels
 
