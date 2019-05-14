@@ -208,12 +208,11 @@ You should get a message saying that a deployment was created.
 	
 	$ kubectl describe pods yourpodname
 	
+	$ kubectl describe nodes yournode
+	
  Take note of the IP of the node where your pod was deployed:
-
-Jose Tip: Be more clear/printscreen regarding yourpodname
- 
-   
-   ![](images/200/jotb19_describedeploy.png)
+  ![](images/000/getIP.png) 
+  ![](images/200/jotb19_describedeploy.png)
    
    
    
@@ -232,10 +231,7 @@ You should get a message saying that your service was created.
 	$ kubectl get services
 
 Take note of the port where your service was configured
-
-Kevin: Add IP obtained in pod description to port obtained in get services.
-PRINTSCREEN HERE PLEASE !!!
-
+![](images/000/getPort.png)
 
 ![](images/200/jotb2019serviceport.PNG)
 
