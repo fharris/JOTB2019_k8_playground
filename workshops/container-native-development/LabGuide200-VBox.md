@@ -3,7 +3,7 @@
 
 ## Introduction
 
-TBD
+In the previous lab you pushed the image of your twitter-feed microservice to your docker repository. Now its time to use that image and automate its deployment against your namespace inside our kubernetes cluster.
 
 ## Objectives
 
