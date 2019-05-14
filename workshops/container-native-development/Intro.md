@@ -217,13 +217,13 @@ You should get a message saying that a deployment was created.
   ![](images/000/getIP.png) 
   ![](images/200/jotb19_describedeploy.png)
    
-  What you want is the External IP! Once again, take note of it... you will need it in the next point.
+  What you want is the External IP! And in our cluster this public external IP will always start with 130.X.X.X! Once again, take note of it... you will need it in the next point.
    
 **Let's create the service in the cluster**
 
 [Optional: Read theory](https://kubernetes.io/docs/concepts/services-networking/service/).
 
-Please download the manifest yaml for the service definition from [here](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/manifestService.yml).
+You have done greate. The pod is running in a node. You also have the public IP of this node. But, you need a way to get access to the application running in the pod. You will use a construct called **Service** to achieve that. Please download the manifest yaml for the service definition from [here](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/manifestService.yml).
 
 	$ kubectl create -f manifestService.yml
 	
