@@ -4,13 +4,13 @@ In this 1st part we will explore a few k8's basic concepts while on the same tim
 
 **TIP : If you are using Windows, having Git Bash for Windowns installed can be very helpfull as you will be able to run Linux comands whenever you need!**
 
-This is supposed to be a begginers workshop! So, if you already have a good grasp of kubernetes, you'll probably finish this very quickly! In the case you're a newbie, you'll find some help and comfort in the [kubernetes.io](https://kubernetes.io/docs/tutorials/kubernetes-basics/) page. Along the workshop we'll point you out the links to the concepts if you want to learn how things work in theory! But for now, let's go hands-on! 
+This is supposed to be a begginers workshop! So, if you already have a good grasp of kubernetes, you'll probably finish this very quickly! In the case you're a newbie, you'll find some help and comfort in the [kubernetes.io](https://kubernetes.io/docs/tutorials/kubernetes-basics/) page. Along the workshop we'll point you out the links to the concepts if you want to learn how things work in theory! As we mentioned before, take your time and enjoy the theory as well!
 
 ### **Step 1**: Copy kubeconfig file 
 
 [Optional: Read theory](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/).
 
-It typically takes around 5 minutes to create a managed OKE (Oracle Kubernetes Cluster) in OCI (Oracle Cloud Infrastructure), whether with the OCI Console, the OCI API, with Terraform or JenkinsX.
+It typically takes around 5 minutes to create a managed **OKE (Oracle Kubernetes Cluster)** in **OCI (Oracle Cloud Infrastructure)**, whether with the **OCI Console**, the **OCI API**, with **Terraform** or **JenkinsX**.
 Today, you won't need to create a cluster as you're going to work in a cluster which was already created for you. All you'll have to do is to download the kubconfig file [here](https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/interactivetech/b/kubeconfig_jotb2019/o/kubeconfig).
 
 This file gives you a lot of power! You'll be able to execute any type of action or operation against the cluster! You'll need that power along this workshop! 
@@ -23,7 +23,7 @@ Take this Linux example if you're using Linux:
   
       $ mkdir -p $HOME/container-workshop
     
-  ####    or
+ or
      
       $mkdir container-workshop
 
@@ -35,10 +35,11 @@ Take this Linux example if you're using Linux:
        
 
 Please, don't forget to copy the **kubeconfig** file you just downloaded into the **container-workshop** folder.
+The kubeconfig file has all the information and credentials needed to connect your local machine with the kubernetes cluster.
 
-This folder will be your local working folder where you'll generally execute your commands and copy and download the different files you will need.
+The folder **container-workshop** will be your local working folder where you'll generally execute your commands and copy and download the different files you will need.
 
-### **STEP 2**: Install and Test kubectl on Your Local Machine
+### **STEP 2**: Install and test kubectl on Your Local Machine
 
 - The method you choose to install `kubectl` will depend on your operating system and any package managers that you may already use. The generic method of installation, downloading the binary file using `curl`, is given below (**run the appropriate command in a terminal or command prompt**). If you prefer to use a package manager such as apt-get, yum, homebrew, chocolatey, etc, please find the specific command in the [Kubernetes Documentation](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
 
@@ -87,7 +88,7 @@ This folder will be your local working folder where you'll generally execute you
     You should see in the `cluster-info` that the Kubernetes master has an `oraclecloud.com` URL. If it instead has a `localhost` URL, your `KUBECONFIG` environment variable may not be set correctly. 
     
     **ATTENTION**:
-    **Double check the environment variable against the path and filename of your `kubeconfig` file.**
+    **Double check the environment variable against the path and filename of your `kubeconfig` file.** What we mean is that you have to make sure that when you run the above **export** or **set** command to create the environment variable pointing to the kubeconfig, the path was well assigned to the variable. Failing to do this will not let you run the kubectl properly.
 
 If everything is ok, we can now use `kubectl` to start a proxy that will give us access to the Kubernetes Dashboard through a web browser at a localhost URL. Run the following command in the same terminal window:
 
