@@ -129,6 +129,7 @@ If everything is ok, we can now use `kubectl` to start a proxy that will give us
  You will see that the typical k8s default namespaces are created.
     
   **namespaces created**
+  
     ```
     ./kubectl get namespaces --show-labels
     ```
@@ -153,11 +154,11 @@ If everything is ok, we can now use `kubectl` to start a proxy that will give us
     
 where you see name-surname (e.g.: fernando-harris), please replace with your own (e.g. john-doe) and thats shall become your namespace. If it colides with one of your coleagues namespace, please use one of your other surnames, or nicknames.... I'm sure you have many cool nicknames :p !
    
-  **Run the following command to create the namespace **
+**Run the following command to create the namespace **
    
    	$ kubectl create -f namespace-dev.json
 	
-  **If you check the existing namespaces again, you should see that more resources of type namespace have been created **
+**If you check the existing namespaces again, you should see that more resources of type namespace have been created **
    
    	$ kubectl get namespaces --show-labels
 
