@@ -35,7 +35,7 @@ Take this Linux example if you're using Linux:
        
 
 Please, don't forget to copy the **kubeconfig** file you just downloaded into the **container-workshop** folder.
-The kubeconfig file has all the information and credentials needed to connect your local machine with the kubernetes cluster.
+The **kubeconfig** file has all the information and credentials needed to connect your local machine with the kubernetes cluster.
 
 The folder **container-workshop** will be your local working folder where you'll generally execute your commands and copy and download the different files you will need.
 
