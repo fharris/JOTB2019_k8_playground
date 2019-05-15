@@ -5,6 +5,9 @@
 
 In the previous lab you pushed the image of your twitter-feed microservice to your docker repository. Now its time to use that image and automate its deployment against your namespace inside our kubernetes cluster.
 
+![](images/200/Lab200.png)
+*Note: For JOTB version of the workshop, the configuration of the cluster (thanks to Terraform in the picture) as already been done for you. You just created a namespace in this cluster in Lab 100.*
+
 ## Objectives
 
 **Automate Deployment to Kubernetes**
