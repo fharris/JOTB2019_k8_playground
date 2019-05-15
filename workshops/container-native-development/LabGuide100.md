@@ -6,6 +6,9 @@ note: forked and adapted from Derek Oneil - Oracle Learning original workshop
 
  **JOTB 2019.** This workshop will walk you through the process of moving an existing application into a containerized CI/CD pipeline and deploying it to a Kubernetes cluster in OCI.
 
+![](images/100/Lab100.png)
+
+Assuming the role of a DevOps engineer, as Chip, you'll set up Wercker to monitor your application source code repository for commits and automatically trigger a build, test and package which will result in a Docker image of your application that is ready to be deployed.
 
 ## Objectives
 
