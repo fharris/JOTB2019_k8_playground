@@ -128,7 +128,11 @@ If everything is ok, we can now use `kubectl` to start a proxy that will give us
  
  You will see that the typical k8s default namespaces are created.
     
-    $ kubectl get namespaces --show-labels
+  **namespaces created**
+    ```
+    ./kubectl get namespaces --show-labels
+    ```
+    
    
   **Now lets create our own namespace where we are going to work**
    
