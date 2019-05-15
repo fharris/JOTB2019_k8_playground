@@ -1,6 +1,6 @@
 # JOTB 2019 - K'8s Playground
 
-## What is this about ??
+## What is this about ?
 
 This workshop is aimed to help you to build and deploy microservices through a CI/CD pipeline against a K8's cluster!
 
