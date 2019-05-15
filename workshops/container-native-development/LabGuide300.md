@@ -3,7 +3,7 @@
 
 ## Introduction
 
-TBD
+Congratulations for getting to this lab! We have now an automated CI/CD pipeline ready to use with Wercker, Github, DockerHub and Oracle Container Engine or OKE. And this is going to be extremely useful during this lab, as we need to fix a bug in our code.
 
 ## Objectives
 
