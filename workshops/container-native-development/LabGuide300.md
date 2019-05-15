@@ -78,7 +78,7 @@ Congratulations for getting to this lab! We have now an automated CI/CD pipeline
 
 ### **STEP 3**: Validate Product Catalog application functionality
 
-If you don't remember the ip and port where you're app catalog service is running get back to **Discovering and Load Balancing --> Services --> product-catalog-service** and take note of it:
+If you don't remember the ip and port where you're app catalog service is running get back to **Discovering and Load Balancing --> Services --> product-catalog-service** step in the previous lab.
 
 ![](images/200/nodePortPath.png)
 
@@ -87,4 +87,4 @@ If you don't remember the ip and port where you're app catalog service is runnin
 
   ![](images/300/13.png)
 
-  **Congratulations you finished your DRY RUN Kubernetes Playground JOTB 2019**
+  **Congratulations you finished your Kubernetes Playground JOTB 2019**
