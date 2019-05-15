@@ -107,6 +107,7 @@ If everything is ok, we can now use `kubectl` to start a proxy that will give us
   ![](images/LabGuide200-73acec26.png)
 
   **NOTE**: If you receive an error stating `bind: address already in use`, you may have another application running on port 8001. You can specify a different port for the proxy by passing the `--port=` parameter, for example `kubectl proxy --port=8002`. Note that you  will have to modify the URL for the dashboard in the next step to match this port.
+   **NOTE**: If you see an browser error stating `The requested resource could not be found.`, make sure you sure you run `./kubectl proxy` in the same shell as where you set or `EXPORT` the `KUBECONFIG` environment variable.
 
 - Leave the proxy server running and navigate to the [Kubernetes Dashboard by Right Clicking on this link](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/), and choosing **open in a new browser tab**.
 
