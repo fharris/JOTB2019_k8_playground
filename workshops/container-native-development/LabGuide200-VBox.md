@@ -313,11 +313,16 @@ Please, when working in the **Kubernetes dashboard**, make sure you're working i
 - Instead of a cluster-internal IP address, the product-catalog-service will be exposed to the internet via a **Node Port**. The node where our pod is running will expose a port for this service on its public IP address.  All the information you need to have access to the application can be obtained as well in the  **Kubernetes dashboard** browser tab. 
 Make sure you're in your namespace. Then go to **Discovering and Load Balancing --> Services --> product-catalog-service** .
 
+
+Follow the image below and take note of the node port which is exposed through a **service**. According to the image below would be **32318** , and take note of theinternal names of the nodes where the deployment ocurred just as you did in lab 000 before. In this case, as 2 replicas were deployed, 2 pods are running. one in the node **10.0.15.2** and another in the node **10.0.13.2**. 
+
 ![](images/200/nodePortPath.png)
  	
-Here you will see the nodes where the pods are running and the port exposed. Following the above image example, the application should be running in : http://130.61.57.83:30509/
+Now, if you go to **Cluster-->Nodes-->NodeName(eg:10.0.15.2)** you should be able to see the image below where you can associate the node to an **external IP**. An **external IP** in our cluster always has the format **130.61.X.X**. In the image below what would be **130.61.123.29** :
 
-- Set up your ip+port combination in a browser...
+![](images/200/nodePortPath2.png)
+
+Okidoki, now if you go to a browser and try http://130.61.123.29:32318/  ....
 
 - You should see the product catalog site load successfully, validating that our new Kubernetes deployment and service were created correctly. Let's test the twitter feed functionality of the catalog. Click the first product, **Crayola New Markers**. The product's twitter feed should be displayed.
 
