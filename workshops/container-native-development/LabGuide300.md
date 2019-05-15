@@ -5,6 +5,10 @@
 
 Congratulations for getting to this lab! We have now an automated CI/CD pipeline ready to use with Wercker, Github, DockerHub and Oracle Container Engine or OKE. And this is going to be extremely useful during this lab, as we need to fix a bug in our code.
 
+  ![](images/300/Lab300.png)
+  
+Still assuming the role of a Developer, you will fix a a bug in the Java microservice you've deployed to Kubernetes. You'll make a code change that fixes the bug, commit the code to GitHub and observe the execution of a build and deploy worflow that is managed by your application. Then you'll test the application to verify that the bud fix was successful.
+
 ## Objectives
 
 **Make a Bug Fix to Your Java Microservice**
