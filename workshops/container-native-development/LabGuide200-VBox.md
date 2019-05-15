@@ -314,15 +314,15 @@ Please, when working in the **Kubernetes dashboard**, make sure you're working i
 Make sure you're in your namespace. Then go to **Discovering and Load Balancing --> Services --> product-catalog-service** .
 
 
-Follow the image below and take note of the node port which is exposed through a **service**. According to the image below would be **32318** , and take note of theinternal names of the nodes where the deployment ocurred just as you did in lab 000 before. In this case, as 2 replicas were deployed, 2 pods are running. one in the node **10.0.15.2** and another in the node **10.0.13.2**. 
+Follow the image below and take note of the node port which is exposed through a **service**. The example in the image shows that the port would be **32318**. You should also take note of the internal names of the nodes where the deployment ocurred. Actually just as you did in lab 000 with the command line and kubectl. In this case, as 2 replicas were deployed, 2 pods are running. One pod is running in the node **10.0.15.2** and another pod is running in the node **10.0.13.2**. 
 
 ![](images/200/nodePortPath.png)
  	
-Now, if you go to **Cluster-->Nodes-->NodeName(eg:10.0.15.2)** you should be able to see the image below where you can associate the node to an **external IP**. An **external IP** in our cluster always has the format **130.61.X.X**. In the image below what would be **130.61.123.29** :
+You have all the info needed. You just need now to know how to invoke this from the internet. If you go to **Cluster-->Nodes-->NodeName(eg:10.0.15.2)** you should be able to see the image below where you can associate the node to an **external IP**. An **external IP** in our cluster always has the format **130.61.X.X**. In the image below what would be **130.61.123.29** :
 
 ![](images/200/nodePortPath2.png)
 
-Okidoki, now if you go to a browser and try http://130.61.123.29:32318/  ....
+Okidoki, now if you go to a browser and try http://ExternalIP:NodePort/  ....
 
 - You should see the product catalog site load successfully, validating that our new Kubernetes deployment and service were created correctly. Let's test the twitter feed functionality of the catalog. Click the first product, **Crayola New Markers**. The product's twitter feed should be displayed.
 
